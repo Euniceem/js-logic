@@ -134,10 +134,13 @@ console.log(bigBird('Cat'));
 function isEqual(first, second){
   if (first === second){
     return "You look mahvelous!"
+  }else{
+    return "I dont know who you are anymore"
   }
 }
 
 console.log(isEqual('Cat','Cat'));
+console.log(isEqual('Cat','Dog'));
 /*
  * #7
  * Function - notEqual
@@ -150,8 +153,16 @@ console.log(isEqual('Cat','Cat'));
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
+function notEqual(first,second){
+  if (first !== second){
+    return "Opposites do attract."
+  }else{
+    return "Cause it's like you're my mirror."
+  }
+}
 
-
+console.log(notEqual('Hi','Bye'));
+console.log(notEqual('Beach','Beach'));
 /*
  * #8
  * Function - spareChange
