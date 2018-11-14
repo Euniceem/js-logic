@@ -197,9 +197,16 @@ console.log(spareChange(200));
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */ 
+function dirty30(one,two,three){
+  if ((one + two + three) > 30){
+    return true
+  }else{
+    return false
+  }
+}
 
-
-
+console.log(dirty30(5,3,23));
+console.log(dirty30(1,2,3));
 /*
  * #10
  * Function - evenStevens
@@ -211,9 +218,16 @@ console.log(spareChange(200));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
+function evenStevens(num){
+  if (num%2 === 0){
+    return true
+  }else{
+    return false 
+  }
+}
 
-
-
+console.log(evenStevens(4));
+console.log(evenStevens(3));
 
 /*
  * #11
@@ -227,8 +241,16 @@ console.log(spareChange(200));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
+function daClub(cover,age){
+  if (cover >= 21 && age >= 21){
+    return "Welcom to the Legends Lounge"
+  }else{
+    return "Chuck E Cheese is across the street"
+  }
+}
 
-
+console.log(daClub(21,21));
+console.log(daClub(20,20));
 /*
  * #12
  * Function - graduation
@@ -241,9 +263,16 @@ console.log(spareChange(200));
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
+function graduation(credits,thesis){
+  if(credits >= 120 || thesis === true){
+    return "Congratulations on a job well done."
+  }else{
+    return "See you in summer school"
+  }
+}
 
-
-
+console.log(graduation(120,false));
+console.log(graduation(110,false));
 /*
  * #13
  * Function - moneyTrain
@@ -255,8 +284,19 @@ console.log(spareChange(200));
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
+function moneyTrain(speed){
+  if(speed < 50){
+    return "You are riding Honolulu's Rail."
+  }else if(speed < 100){
+    return "You are riding an Amtrak."
+  }else{
+    return "Now you ballin' in the Shinkansen!"
+  }
+}
 
-
+console.log(moneyTrain(40));
+console.log(moneyTrain(80));
+console.log(moneyTrain(200));
 /*
  * #14
  * Function - buyDoughnut
@@ -270,7 +310,19 @@ console.log(spareChange(200));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+var budget = 30;
+var doughnutPrice = 2;
+var doughnutBought = 0;
 
+function buyDoughnut(){
+  if(budget >= doughnutPrice){
+    budget -= doughnutPrice;
+    doughnutBought ++
+  }
+}
+buyDoughnut()
+ console.log(budget);
+ console.log(doughnutBought);
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
