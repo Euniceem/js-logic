@@ -32,8 +32,14 @@ var firstName = 'Eunice'
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
-
-
+function canVote(age){
+  if (age >=18){
+    return true
+  }else{
+    return false
+  }
+}
+console.log('1. canVote', canVote(24));
 /*
  * #2
  * Function - login
@@ -45,8 +51,15 @@ var firstName = 'Eunice'
  * The function will return the message: "Login Success!", if the string passed into the function is "test1234"
  * Console.log your result.
 */
+function login(password){
+  if (password === 'Shaka'){
+    return "Login Success!"
+  }else{
+    return false
+  }
+}
 
-
+console.log(login('Shaka'));
 /*
  * #3
  * Function - isGreaterThan
@@ -59,9 +72,15 @@ var firstName = 'Eunice'
  * The function will return true if the first number is greater than the second.
  * Console.log your result.
 */
+function isGreaterThan(first,second){
+  if (first < second){
+    return true
+  }else{
+    return false
+  }
+}
 
-
-
+console.log(isGreaterThan(3,5));
 /*
  * #4
  * Function - mustBeTrue
