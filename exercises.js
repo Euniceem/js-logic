@@ -92,9 +92,15 @@ console.log(isGreaterThan(3,5));
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
+function mustBeTrue(boo){
+  if (boo === true){
+    return true
+  }else{
+    return false
+  }
+}
 
-
-
+console.log(mustBeTrue(true));
 /*
  * #5
  * Function - bigBird
@@ -106,9 +112,13 @@ console.log(isGreaterThan(3,5));
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
+function bigBird(word){
+  if (word.length ===3){
+    return 'Word to Big Bird!'
+  }
+}
 
-
-
+console.log(bigBird('Cat'));
 /*
  * #6
  * Function - isEqual
@@ -121,8 +131,13 @@ console.log(isGreaterThan(3,5));
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
+function isEqual(first, second){
+  if (first === second){
+    return "You look mahvelous!"
+  }
+}
 
-
+console.log(isEqual('Cat','Cat'));
 /*
  * #7
  * Function - notEqual
